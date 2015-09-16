@@ -1,0 +1,8 @@
+<?php $__env->startSection('content'); ?>
+
+	<p>Welcome at DoTo!</p> 
+	<p>This is a simple ToDo-App made by Job Henkens in Laravel.</p>
+	<p>You can <a href="/register">register here</a>, or if you already did, you can <a href="/login">log in right here</a>.</p>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

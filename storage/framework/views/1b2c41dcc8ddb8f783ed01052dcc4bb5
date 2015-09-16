@@ -1,0 +1,26 @@
+<?php $__env->startSection('content'); ?>
+
+	<h2>Dashboard</h2>
+	
+	<?php if($userLists): ?>
+
+		<h3>Get to work and finish your DoTo-Lists!</h3>
+		<ul>
+		<?php foreach($userLists as $userList): ?>
+			<li><a href="/viewList"><?php echo e($userList->listTitle); ?></a>||<a href="/deleteList">Delete list</a></li>
+		<?php endforeach; ?>
+		</ul>
+
+		<p>Or make a new DoTo-List:</p> 
+		<p><a href="/addList">make new list</a></p>
+
+	<?php else: ?>
+	
+		<p>Get started and make a new DoTo-List!</p> 
+		<p><a href="/addList">make new list</a></p>
+
+	<?php endif; ?>
+
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

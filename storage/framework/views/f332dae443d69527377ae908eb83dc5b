@@ -1,0 +1,23 @@
+<?php $__env->startSection('content'); ?>
+
+	<h2>Add item(s) to your DoTo-List:</h2>
+
+	<?php echo Form::open(array('url' => 'storeListItem' )); ?>
+
+    	<?php echo $__env->make('pages.addListItemForm', ['submitButtonText' => 'Add item(s)'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <?php echo Form::close(); ?>
+
+
+    <?php echo $__env->make('errors.errorList', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+
+<!--	<ul>
+	<?php foreach($dotolists as $dotolist): ?>
+		
+		<li><?php echo e($dotolist->user_id); ?></li>	
+		
+	<?php endforeach; ?>
+	</ul>-->
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

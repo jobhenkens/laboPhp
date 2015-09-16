@@ -1,0 +1,14 @@
+<?php $__env->startSection('content'); ?>
+
+	<h2>Make new DoTo-List:</h2>
+
+	<?php echo Form::open(array('url' => 'storeList')); ?>
+
+    	<?php echo $__env->make('pages.addListForm', ['submitButtonText' => 'Add new list'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <?php echo Form::close(); ?>
+
+
+    <?php echo $__env->make('errors.errorList', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

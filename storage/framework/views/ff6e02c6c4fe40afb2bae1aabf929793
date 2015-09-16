@@ -1,0 +1,28 @@
+<!doctype <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"></meta>
+	<title>Labo PHP - Job Henkens</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/reset.css">-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+	<div class="container">
+
+	<?php echo $__env->make('pages.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+	<main>	
+	
+	<?php echo $__env->yieldContent('content'); ?>
+
+	</main>
+
+	<?php echo $__env->yieldContent('footer'); ?>
+	
+	</div>
+	
+
+</body>
+</html>

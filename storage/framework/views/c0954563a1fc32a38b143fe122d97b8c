@@ -1,0 +1,23 @@
+<?php $__env->startSection('content'); ?>
+
+	<h2>Name of DoTo-List</h2>
+
+	<ul>
+		<li>Item1||<a href="#">Delete item1</a></li>
+		<li>Item2||<a href="#">Delete item2</a></li>
+		<li>Item ...||<a href="#">Delete item ...</a></li>
+
+	</ul>
+
+	<h3>Add new item</h3>
+	<?php echo Form::open(array('url' => 'storeListItem' )); ?>
+
+    	<?php echo $__env->make('pages.addListItemForm', ['submitButtonText' => 'Add item(s)'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <?php echo Form::close(); ?>
+
+
+
+	<a href="/dashboard">Go to all my DoTo-Lists</a>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

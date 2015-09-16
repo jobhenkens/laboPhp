@@ -1,0 +1,29 @@
+<div>
+
+	<?php echo Form::label('email', 'E-mail:'); ?>
+
+	<?php echo Form::email('email', null); ?>
+
+
+</div>
+
+<div>
+
+	<?php echo Form::label('password', 'Password:'); ?>
+
+	<?php echo Form::password('password', null); ?>
+
+
+</div>
+
+<!--<div>
+    <input type="checkbox" name="remember"> Remember Me
+</div>-->
+
+<div>
+
+	<?php echo Form::submit($submitButtonText); ?>
+
+
+</div>
+

@@ -1,0 +1,18 @@
+<?php echo Form::hidden ('list_id', 22 ); ?>
+
+
+<div>
+
+	<?php echo Form::label('item', 'New DoTo-Item:'); ?>
+
+	<?php echo Form::text('item', null); ?>
+
+
+</div>
+
+<div>
+
+	<?php echo Form::submit($submitButtonText); ?>
+
+
+</div>

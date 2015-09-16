@@ -1,0 +1,16 @@
+<?php $__env->startSection('content'); ?>
+
+	<h2>Log in:</h2>
+
+	<p>If you're not yet registered you need to <a href="/register">register here</a> first.</p>
+
+	<?php echo Form::open(array('url' => 'login')); ?>
+
+    	<?php echo $__env->make('pages.form', ['submitButtonText' => 'Log in'], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <?php echo Form::close(); ?>
+
+
+    <?php echo $__env->make('errors.errorList', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

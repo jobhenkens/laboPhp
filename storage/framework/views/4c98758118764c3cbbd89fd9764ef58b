@@ -1,0 +1,14 @@
+<div>
+
+	<?php echo Form::label('listTitle', 'Name of new list:'); ?>
+
+	<?php echo Form::text('listTitle', null); ?>
+
+
+</div>
+<div>
+
+	<?php echo Form::submit($submitButtonText); ?>
+
+
+</div>
